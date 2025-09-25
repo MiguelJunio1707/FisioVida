@@ -15,25 +15,27 @@
     </style>
 </head>
 <body>
+     <!-- Barra superior do site. -->
      <div class="container-fluid bg-light ps-1 pe-0 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-0">
                 <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="bi bi-clock"></i></i>Aberto de Segunda-feira a Sexta-feira das 8 : 00 AM até 18 : 00 PM.</small>
+                    <small class="py-2"><i class="bi bi-clock container"></i>Aberto de Segunda-feira a Sexta-feira das 8 : 00 AM até 18 : 00 PM.</small>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
                 <div class="position-relative d-inline-flex align-items-center bg-success text-white top-shape px-4">
                     <div class="me-3 pe-3 border-end py-2">
-                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@example.com</p>
+                        <p class="m-0"><i class="bi bi-envelope-at me-2"></i>Fisiovida2025@gmail.com</p>
                     </div>
                     <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                        <p class="m-0"><i class="bi bi-telephone me-2"></i>+012 345 6789</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+  <!--fim da barra superior do site. -->
 
 <!-- Barra de navegação do site. -->
 
@@ -48,7 +50,7 @@
             <div class="navbar-nav">
                 <a href="index.html" class="nav-link">HOME</a>
                 <a href="equipe.html" class="nav-link">EQUIPE</a>
-                <a href="servico.html" class="nav-link">SERVIÇO</a>
+                <a href="servico.html" class="nav-link">SERVIÇOS</a>
                 <a href="sobre.html" class="nav-link">SOBRE</a>
                 <a href="contato.html" class="nav-link active">CONTATO</a>
             </div>
@@ -121,9 +123,9 @@
 
 <!-- Formulário de Contato -->
 <div class="container my-5">
-  <h2 class="text-center mb-4">Fale Conosco</h2>
+  <h2 class="text-center mb-4">Avalie sua experiência</h2>
   <p class="text-center mb-5">
-    Preencha o formulário abaixo e nossa equipe retornará o mais rápido possível.  
+    Preencha o formulário abaixo para estar avaliando o serviço e caso você possua alguma duvida ou reclamação para estarmos entrando em contato.  
     Estamos prontos para ajudar você no seu processo de recuperação!
   </p>
   
@@ -144,9 +146,19 @@
       <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
     </div>
 
-    <div class="col-12">
-      <label for="mensagem" class="form-label">Mensagem</label>
-      <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+    <div class="col-12"> <label for="mensagem" class="form-label">Mensagem</label> <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea> </div>
+
+
+    <!-- Avaliação -->
+    <div class="col-12 text-center">
+      <label class="form-label d-block mb-2">Avaliação</label>
+      <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+      </div>
     </div>
 
     <!-- Botão -->
@@ -157,7 +169,6 @@
     </div>
   </form>
 </div>
-
 
 <!-- Apartir daqui começa o Rodapé da pagina. -->
 

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/FisioVida/js/main.js">
 
 </head>
-    <link rel="stylesheet" href="/FisioVida/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title> Fisiovida</title>
     <link rel="icon" href="img/Icone fisiovida.jfif">
     <style>
@@ -53,17 +53,17 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menunavbar" id="menunavbar"><span class="navbar-toggler-icon"></span></button>
         </div>
         <div class="collapse navbar-collapse" id="menunavbar">
-          <div class="navbar-nav">
-            <a href="index.html" class="nav-link active">HOME</a>
-            <a href="equipe.html" class="nav-link">EQUIPE</a>
-            <a href="servico.html" class="nav-link">SERVIÇO</a>
-            <a href="sobre.html" class="nav-link">SOBRE</a>
-            <a href="contato.html" class="nav-link">CONTATO</a>
+          <div class="navbar-nav text-center" style="position: absolute; right: 25vh;">
+            <a href="index.html" class="nav-link active fs-5">HOME</a>
+            <a href="equipe.html" class="nav-link fs-5">EQUIPE</a>
+            <a href="servico.html" class="nav-link fs-5">SERVIÇOS</a>
+            <a href="sobre.html" class="nav-link fs-5">SOBRE</a>
+            <a href="contato.html" class="nav-link fs-5">CONTATO</a>
         </div>
         
-        <div class="d-flex ms-auto align-items-center gap-2">
-            <button type="button" class="btn btn-outline-primary botao1"><i class="bi bi-person-fill"></i> Login</button>
-            <button type="button" class="btn btn-outline-primary botao2"><i class="bi bi-calendar"></i> Agendar</button>
+        <div class="d-flex ms-auto align-items-center gap-3">
+            <button type="button" class="btn btn-outline-primary botao1"><i class="bi bi-person-fill"> Login</i></button>
+            <button type="button" class="btn btn-outline-primary botao2"><i class="bi bi-calendar"> Agendar</i></button>
         </div>        
         </div>
     </nav>
@@ -115,81 +115,127 @@
 
   <!-- Fim do carrossel. -->
 
-  <!-- Começo dos banners. -->
+  <!-- Começo dos banners -->
+<div class="container-fluid banner my-5">
+  <div class="container">
+    <div class="row gx-4 gy-4">
+      
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="bg-primary d-flex flex-column p-4 h-100 rounded shadow-sm">
+          <h3 class="text-white mb-3">Horários de Funcionamento</h3>
+          <div class="d-flex justify-content-between text-white mb-2">
+            <h6 class="mb-0">Seg - Sex</h6>
+            <p class="mb-0">8:00 - 18:00</p>
+          </div>
+          <div class="d-flex justify-content-between text-white mb-2">
+            <h6 class="mb-0">Sábado</h6>
+            <p class="mb-0">8:00 - 17:00</p>
+          </div>
+          <div class="d-flex justify-content-between text-white mb-4">
+            <h6 class="mb-0">Domingo</h6>
+            <p class="mb-0">8:00 - 16:00</p>
+          </div>
+          <a class="btn btn-light mt-auto" href="">Realizar Agendamento</a>
+        </div>
+      </div>
 
-      <div class="container-fluid banner mb-5">
-        <div class="container position-relative top-200 translate-middle" style="position: absolute; left: 35%;">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Horários de Funcionamento</h3>
-                        <div class="d-flex justify-content-between text-white mb-3">
-                            <h6 class="text-white mb-0">Seg - Sex</h6>
-                            <p class="mb-0"> 8:00am - 18:00pm</p>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="bg-dark d-flex flex-column p-4 h-100 rounded shadow-sm">
+          <h3 class="text-white mb-3">Serviços Disponíveis</h3>
+          <div class="date mb-3" id="date" data-target-input="nearest">
+            <input type="date" class="form-control bg-light border-0 datetimepicker-input"
+             placeholder="Data da Consulta" data-target="#date" data-toggle="datetimepicker" style="height: 40px;">
+          </div>
+          <select class="form-select bg-light border-0 mb-4" style="height: 40px;">
+            <option selected>Selecionar tipo de serviço</option>
+            <option value="1">Ortopédica</option>
+            <option value="2">Neurológica</option>
+            <option value="3">Pediátrica</option>
+            <option value="4">Respiratória</option>
+            <option value="5">Esportiva</option>
+            <option value="6">Geriátrica</option>
+            <option value="7">Uroginecológica e Obstétrica</option>
+            <option value="8">Cardiorrespiratória</option>
+            <option value="9">Aquática (Hidroterapia)</option>
+          </select>
+          <a class="btn btn-light mt-auto" href="">Conferir horários</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="bg-success d-flex flex-column p-4 h-100 rounded shadow-sm">
+          <h3 class="text-white mb-3">Agende pelo Telefone</h3>
+          <p class="text-white">Você também pode realizar o agendamento diretamente pelo nosso número de telefone.</p>
+          <h2 class="text-white mt-auto">+012 345 6789</h2>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Fim dos banners -->
+
+  <!-- Propaganda -->
+<div class="container my-5">
+  <div class="row align-items-center">
+    
+    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+      <h1 class="text-success mb-3">Fisiovida</h1>
+      <p class="fs-5">
+        Na <b>FisioVida</b>, oferecemos um atendimento de excelência em fisioterapia, 
+        com profissionais qualificados e dedicados à sua recuperação e bem-estar. 
+        Confiança, acolhimento e resultados reais em cada sessão. 
+        Venha para a FisioVida e sinta a diferença!
+      </p>
+    </div>
+
+    <div class="col-12 col-lg-6 text-center">
+      <img src="./img/ChatGPT Image 23 de set. de 2025, 15_28_44.png" 
+           alt="imagem" 
+           class="img-fluid rounded shadow opacity-75" 
+           style="object-fit: cover; max-height: 400px;">
+    </div>
+
+  </div>
+</div>
+<!-- Fim da Propaganda -->
+
+<!-- Segundo carrossel -->
+
+    <div class="container-fluid bg-primary bg-testimonial my-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <h1 class="text-center text-white py-4 fs-2"><i>Nosso hambiente sempre será o mais acolhedor e confortavel possivel para a melhor experiência</i></h1>
+                    <div id="carouselExample" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <img src="./img/Clinica foto.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="d-flex justify-content-between text-white mb-3">
-                            <h6 class="text-white mb-0">Sábado</h6>
-                            <p class="mb-0"> 8:00am - 17:00pm</p>
+                        <div class="carousel-item">
+                          <img src="./img/Clinica foto 2.png" class="d-block w-100" alt="...">
                         </div>
-                        <div class="d-flex justify-content-between text-white mb-3">
-                            <h6 class="text-white mb-0">Domingo</h6>
-                            <p class="mb-1"> 8:00am - 16:00pm</p>
+                        <div class="carousel-item active">
+                          <img src="./img/Fisioterapeutas na clinica.png" class="d-block w-100" alt="...">
                         </div>
-                        <a class="btn btn-light" href="">Realizar Agendamento</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-dark d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-4">Serviços Disponíveis</h3>
-                        <div class="date mb-3" id="date" data-target-input="nearest">
-                          <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                                placeholder="Data da Consulta" data-target="#date" data-toggle="datetimepicker" style="height: 40px;">
-                        </div>
-                        <select class="form-select bg-light border-0 mb-4" style="height: 40px;">
-                            <option selected>Selecionar tipo de serviço</option>
-                            <option value="1">Service 1</option>
-                            <option value="2">Service 2</option>
-                            <option value="3">Service 3</option>
-                        </select>
-                        <a class="btn btn-light" href="">Conferir horários</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="bg-success d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Agende pelo Telefone</h3>
-                        <p class="text-white">Você também pode escolher realizar o seu agendamento diretamente pelo nosso número de Telefone.</p>
-                        <h2 class="text-white mb-0">+012 345 6789</h2>
-                    </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
                 </div>
             </div>
         </div>
     </div>
 
-  <!-- Fim dos banners. -->
+<!-- Fim do segundo carrossel -->   
 
-  <!-- propaganda -->
-
-  <div class="container">
-    <div class="col-md-12">
-      <div class="text-bg-success rounded opacity-75">
-      <h1 class="text-center">Fisiovida</h1>
-      </div>
-       <div class="position-relative">
-              <img src="/FisioVida/img/ChatGPT Image 23 de set. de 2025, 15_28_44.png" alt="imagem" class="imagem float-end rounded opacity-75" width="450px" height="400px" style="object-fit: cover;">
-          </div>
-        </div>
-      <div class="col-md-5">
-        <div class="p-5">
-          <div class="fs-3">
-          <p>Na <b>FisioVida</b>, oferecemos um atendimento de excelência em fisioterapia, com profissionais qualificados e dedicados à sua recuperação e bem-estar. Confiança, acolhimento e resultados reais em cada sessão. Venha para a FisioVida e sinta a diferença!</p>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <!-- Fim da propaganda -->
-
-  <!-- Apartir daqui começa o Rodapé da pagina. -->
+<!-- Apartir daqui começa o Rodapé da pagina. -->
 
 <footer class="bg-light text-center text-lg-start mt-auto">
         <div class="container p-4">
@@ -235,7 +281,6 @@
           © 2025 Fisiovida. Todos os direitos reservados.
         </div>
       </footer>
-  
-    <!-- Fim do Rodapé da pagina. -->
+<!-- Fim do Rodapé da pagina. -->
 </body>
 </html>

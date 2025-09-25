@@ -14,6 +14,17 @@ body {
     background-color: rgb(255, 255, 255);
     height: 100vh;
     font-family: roboto;
+
+    background: linear-gradient(135deg, 
+    #ffffff 0%,    
+    #ffffff 50%,    
+    #ffffff 100%   
+  );
+  min-height: 100vh;
+  margin: 0;
+
+  background-attachment: fixed;
+  background-size: cover;
 }
 .botao1{
     position: absolute;
@@ -47,5 +58,76 @@ body {
       font-size: 12px;
     }
   }
+  #servicos h1 {
+    font-weight: 700;
+    color: #198754; /* verde Bootstrap */
+  }
+
+  #servicos .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #servicos .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+
+  #servicos img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .star-rating {
+  direction: rtl;
+  display: inline-flex;
+  justify-content: center;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating label {
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.star-rating input:checked ~ label {
+  color: #ffc107;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffdb58;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+/* Animação para os 3 cards principais */
+.banner .d-flex {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner .d-flex:hover {
+  transform: scale(1.05); /* Expande em 5% */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* Sombra mais intensa */
+}
+
+.bg-testimonial {
+background: linear-gradient(135deg, 
+    #1e90ff 0%,    
+    #00c896 50%,    
+    #ffffff 100%   
+  );
+  min-height: 100vh;
+  margin: 0;
+
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 
   
